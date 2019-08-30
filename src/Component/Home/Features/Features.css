@@ -1,0 +1,43 @@
+.features-container {
+    font-family: 'openSenRegular';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #141313;
+    color: #fff;
+    height: 100vh;
+    padding-top: 5rem;
+}
+
+.features-container h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.image-feature-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    justify-content: space-around;
+}
+
+.feature-block {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8rem;
+}
+
+.feature-block p {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    width: 10rem;
+}

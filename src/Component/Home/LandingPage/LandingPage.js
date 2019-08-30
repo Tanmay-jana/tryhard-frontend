@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "./LandingPage.css";
 import GooglePlayLogo from "../../../assets/google-play-badge.png";
 import TryHardLogo from "../../../assets/429e9bf8b8a94aa87be06f9a038c4d1f014a0941.png";
+import DownloadButton from '../../../assets/Download button.png';
 
 export default class LandingPage extends Component {
   render() {
@@ -19,6 +20,7 @@ export default class LandingPage extends Component {
           <div className = "nav-container">
             <p>Features</p>
             <p>About</p>
+            <img src = {DownloadButton} alt = "dowmload-button"/>
             <button className = "login-button">LOG IN</button>
           </div>
         </header>

@@ -1,14 +1,14 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter, Route, Link } from "react-router-dom";
-import LandingPage from './Component/Home/LandingPage/LandingPage';
+import { BrowserRouter, Route } from "react-router-dom";
+import Home from './Component/Home/Home';
 
 
 function App() {
   return (
     <BrowserRouter className="App">
-      <Route path = "/" component = {LandingPage}/>
-    </BrowserRouter>
+      <Route path = "/" component = {Home} exact/>
+    </BrowserRouter> 
   );
 }
 
