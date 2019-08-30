@@ -3,11 +3,13 @@ import "./LandingPage.css";
 import GooglePlayLogo from "../../../assets/google-play-badge.png";
 import TryHardLogo from "../../../assets/429e9bf8b8a94aa87be06f9a038c4d1f014a0941.png";
 import DownloadButton from '../../../assets/Download button.png';
+import backgroundImg from '../../../assets/d5eaa24d8b1f0c1dc4b07f989c491a87fb92e78a.png';
 
 export default class LandingPage extends Component {
   render() {
     return (
       <div className="landing-page-container">
+        <img className = "background-img" src = {backgroundImg} alt = "background"/>
         <header>
           <div className="logo-container">
             <img

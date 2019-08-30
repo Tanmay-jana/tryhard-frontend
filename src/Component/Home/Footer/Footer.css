@@ -1,0 +1,35 @@
+footer {
+    background: #141313;
+    color: #fff;
+    font-family: 'openSenLight';
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 4rem;
+    border-top: 0.5px solid gray;
+    align-items: center;
+}
+
+.footer-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo-container img{
+    width: 6rem;
+}
+
+.footer-block {
+    text-align: center;
+}
+
+.footer-block p {
+    margin: 0.4rem;
+}
+
+.footer-block h4{
+    font-family: 'openSenBold';
+    font-size: 0.9rem;
+    margin: 0.4rem;
+} 
