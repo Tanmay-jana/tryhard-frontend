@@ -35,3 +35,32 @@
     box-shadow: 0px 0px 52px 3px #535353;
 }
 
+@media screen and (max-width: 500px) {
+    .games-container {
+        background: #141313;
+        height: 100%;
+    }
+
+    .games-text-container {
+        padding: 5% 10%;
+    }
+
+    .games-text-container h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .image-game-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        padding-bottom: 5rem;
+    }
+
+    .image-game-container img {
+        width: 15rem;
+        height: 10rem;
+        margin: 2rem;
+    }
+}

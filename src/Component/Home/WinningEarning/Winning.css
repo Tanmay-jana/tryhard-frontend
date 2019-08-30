@@ -55,3 +55,30 @@
     box-shadow: 0px 0px 15px 1px #535353;
     transition: 0.2s;
 }
+
+@media screen and (max-width: 500px) {
+    .winning-container {
+        height: 100%;
+    }
+
+    .wining-text-container {
+        width: 80%;
+    }
+
+    .wining-text-container h1 {
+        font-size: 2rem;
+    }
+
+    .mobile-img {
+        width: 10rem;
+    }
+
+    .winning-img-container {
+        width: 90%;
+        justify-content: space-around;
+    }
+
+    .download-button-container {
+        text-align: center;
+    }
+}

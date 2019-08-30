@@ -123,3 +123,95 @@ header {
     box-shadow: 0px 0px 15px 1px #535353;
     transition: 0.2s;
 }
+
+.side-nav {
+    display: none;
+}
+
+@media screen and (max-width: 1024px)  {
+    .background-img {
+        display: none;
+    }
+
+    .landing-page-container {
+        background: #141313;
+        height: 100%;
+    }
+
+    .logo-container p{
+        font-family: 'openSenBold';
+        color: #fff;
+        font-size: 2rem;
+        margin: 0;
+        padding-left: 0.5rem;
+    }
+
+    header {
+        padding: 3rem;
+    }
+
+    .tryhard-logo {
+        width: 5rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .side-nav {
+        display: block;
+        width: 5%;
+        height: 5%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .background-img {
+        display: none;
+    }
+
+    .landing-page-container {
+        background: #141313;
+        height: 100%;
+    }
+
+    .logo-container p{
+        font-family: 'openSenBold';
+        color: #fff;
+        font-size: 1.1rem;
+        margin: 0;
+        padding-left: 0.5rem;
+    }
+
+    header {
+        padding: 1.3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .tryhard-logo {
+        width: 3rem;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .side-nav {
+        display: block;
+        width: 8%;
+        height: 8%;
+    }
+
+    .landing-page-container h1 {
+        font-size: 2rem;
+        margin: 5rem 0;
+    }
+
+    .google-play-logo {
+        /* width: 20%; */
+        margin-bottom: 4rem;
+    }
+}

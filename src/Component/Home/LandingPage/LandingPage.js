@@ -6,6 +6,7 @@ import GooglePlayLogo from "../../../assets/google-play-badge.png";
 import TryHardLogo from "../../../assets/429e9bf8b8a94aa87be06f9a038c4d1f014a0941.png";
 import DownloadButton from '../../../assets/Download button.png';
 import backgroundImg from '../../../assets/d5eaa24d8b1f0c1dc4b07f989c491a87fb92e78a.png';
+import sideMenu from '../../../assets/menu-icon-1@2x.png';
 
 export default class LandingPage extends Component {
 
@@ -37,6 +38,7 @@ export default class LandingPage extends Component {
             />
             <p>Tryhard GG</p>
           </div>
+          <img className = "side-nav" src = {sideMenu} alt = "side-menu"/>
           <div className = "nav-container">
             <p>Features</p>
             <p>About</p>
