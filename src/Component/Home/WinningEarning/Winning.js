@@ -17,7 +17,7 @@ export default class Winning extends Component {
             <img className = "mobile-img" src = {mobile} alt = "mobile"/>
             <div className = "download-button-container">
                 <p>Now available on Android</p>
-                <button>DOWNLOAD</button>
+                <button className = "download-button">DOWNLOAD</button>
             </div>
         </div>
       </div>

@@ -8,8 +8,18 @@
 
 .wining-text-container {
     text-align: center;
-    width: 50%;
+    width: 55%;
     padding-bottom: 4rem; 
+}
+
+.wining-text-container h1 {
+    font-family: "openSenBold";
+    font-size: 3rem;
+}
+
+.wining-text-container p {
+    font-family: "openSenRegular";
+    font-size: 1.1rem;
 }
 
 .winning-img-container {
@@ -27,6 +37,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: "openSenRegular";
 }
 
 .download-button-container button {
@@ -37,4 +48,10 @@
     border: none;
     height: 2rem;
     width: 7rem;
+    transition: 0.2s
+}
+
+.download-button-container button:hover {
+    box-shadow: 0px 0px 15px 1px #535353;
+    transition: 0.2s;
 }

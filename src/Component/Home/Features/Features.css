@@ -5,8 +5,8 @@
     align-items: center;
     background: #141313;
     color: #fff;
-    height: 100vh;
-    padding-top: 5rem;
+    /* height: 100vh; */
+    padding: 5rem 2rem;
 }
 
 .features-container h1 {
@@ -40,4 +40,11 @@
     font-size: 1.5rem;
     justify-content: space-between;
     width: 10rem;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.learn-more:hover {
+    text-shadow: 0 0 3px #fff;
+    transition: 0.2s;
 }
