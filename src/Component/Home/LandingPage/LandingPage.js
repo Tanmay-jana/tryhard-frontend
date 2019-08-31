@@ -11,7 +11,8 @@ import sideMenu from '../../../assets/menu-icon-1@2x.png';
 export default class LandingPage extends Component {
 
   state = {
-    stateName: ""
+    stateName: "",
+    sideNav: false
   }
 
   componentDidMount = () => {
@@ -25,9 +26,24 @@ export default class LandingPage extends Component {
     })
   }
 
+  sideNavClick = () => {
+    this.setState({sideNav: true})
+  }
+
+  close = () => {
+    this.setState({sideNav: false})
+  }
+
   render() {
     return (
       <div className="landing-page-container">
+        <div id="mySidenav" className={this.state.sideNav? "sidenav": "invisible"}>
+            <a href="javascript:void(0)" className="closebtn" onClick = {this.close}>&times;</a>
+            <a href="#">Features</a>
+            <a href="#">About</a>
+            <a href="#">Log in</a>
+            {/* <a href="#">Contact</a> */}
+        </div>
         <img className = "background-img" src = {backgroundImg} alt = "background"/>
         <header>
           <div className="logo-container">
@@ -38,7 +54,7 @@ export default class LandingPage extends Component {
             />
             <p>Tryhard GG</p>
           </div>
-          <img className = "side-nav" src = {sideMenu} alt = "side-menu"/>
+          <img onClick = {this.sideNavClick} className = "side-nav" src = {sideMenu} alt = "side-menu"/>
           <div className = "nav-container">
             <p>Features</p>
             <p>About</p>
