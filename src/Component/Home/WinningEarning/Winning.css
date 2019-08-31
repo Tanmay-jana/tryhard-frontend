@@ -59,6 +59,7 @@
 @media screen and (max-width: 500px) {
     .winning-container {
         height: 100%;
+        padding-top: 4rem;
     }
 
     .wining-text-container {
