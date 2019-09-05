@@ -46,13 +46,28 @@
     -webkit-transition: 0.2s;
     /* Safari prior 6.1 */
     transition: 0.2s;
+    display: none;
 }
 
-.google-play-logo:hover {
+.portal-button {
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    height: 3rem;
+    width: 15rem;
+    background: #2196F3;
+    transition: 0.2s;
+    font-size: 1.2rem;
+    outline: none;
+    font-family: 'openSenBold'
+}
+
+.portal-button:hover {
     box-shadow: 0px 0px 20px 2px #535353;
     -webkit-transition: 0.2s;
     /* Safari prior 6.1 */
     transition: 0.2s;
+    border: 5px solid rgb(106, 183, 255);
 }
 
 .google-play-logo:active {
@@ -94,12 +109,12 @@ header {
 
 .nav-container p {
     transition: ease-in 0.2s;
-    border-bottom: 2px solid transparent;
+    border-bottom: 3px solid transparent;
     transition: 0.2s;
 }
 
 .nav-container p:hover {
-    border-bottom: 2px solid green;
+    border-bottom: 3px solid green;
     transition: ease-in 0.2s;
     transition: 0.2s;
 }
@@ -117,6 +132,7 @@ header {
     border-radius: 14px;
     font-weight: bold;
     transition: 0.2s;
+    outline: none;
 }
 
 .login-button:hover {
@@ -154,7 +170,8 @@ header {
     padding-top: 60px;
 }
 
-.invisible a, .sidenav a {
+.invisible a,
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
@@ -167,7 +184,8 @@ header {
     color: #f1f1f1;
 }
 
-.invisible .closebtn, .sidenav .closebtn {
+.invisible .closebtn,
+.sidenav .closebtn {
     position: absolute;
     top: 0;
     right: 25px;
@@ -177,6 +195,7 @@ header {
 
 
 @media screen and (max-width: 1024px) {
+
     .background-img {
         display: none;
     }
@@ -213,6 +232,24 @@ header {
         width: 5%;
         height: 5%;
     }
+
+    .google-play-logo {
+        display: block;
+        /* width: 20%; */
+        width: 13rem;
+        box-shadow: 0px 0px 12px 1px #535353;
+        border-radius: 5px;
+        cursor: pointer;
+        -webkit-transition: 0.2s;
+        /* Safari prior 6.1 */
+        transition: 0.2s;
+        /* margin-bottom: 4rem; */
+    }
+
+    .portal-button {
+        display: none;
+    }
+
 }
 
 @media screen and (max-width: 500px) {
