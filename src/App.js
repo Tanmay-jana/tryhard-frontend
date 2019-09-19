@@ -5,19 +5,18 @@ import "./App.css";
 import { BrowserRouter, Route } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import About from "./Component/About/About";
-import Unique from './Component/Unique/Unique';
-import Terms from './Component/Terms/Terms'
+import Unique from "./Component/Unique/Unique";
+import Terms from "./Component/Terms/Terms";
 import TryHardLogo from "./assets/429e9bf8b8a94aa87be06f9a038c4d1f014a0941.png";
 import sideMenu from "./assets/menu-icon-1@2x.png";
 import discord from "./assets/discord.png";
-import Privacy from './Component/Privacy/Privacy'
+import Privacy from "./Component/Privacy/Privacy";
 
 export default class App extends Component {
   state = {
     sideNav: false,
     scrolled: false
   };
-
 
   componentDidMount = () => {
     window.addEventListener("scroll", () => {
@@ -63,8 +62,16 @@ export default class App extends Component {
           >
             &times;
           </a>
-          <a href="#features">Features</a>
-          <a href="#">Submit Match share code</a>
+          <a onClick={this.close} href="/#features">
+            Features
+          </a>
+          <a onClick={this.close} href="#">
+            Submit Match share code
+          </a>
+          <a onClick={this.close} className="discord-block">
+            {/* <p className="nav-option">Join us on</p>{" "} */}
+            <img className="discord-logo" src={discord} alt="discord" />
+          </a>
           {/* <a href="#">Log in</a> */}
           {/* <a href="#">Contact</a> */}
         </div>
@@ -72,14 +79,15 @@ export default class App extends Component {
         <header
           className={this.state.scrolled === false ? "header1" : "solid-header"}
         >
-          <a className = "logo-link" href = "/"><div className="logo-container">
-            <img
-              className="tryhard-logo"
-              src={TryHardLogo}
-              alt="tryhard-logo"
-            />
-            <p>Tryhard</p>
-          </div>
+          <a className="logo-link" href="/">
+            <div className="logo-container">
+              <img
+                className="tryhard-logo"
+                src={TryHardLogo}
+                alt="tryhard-logo"
+              />
+              <p>Tryhard</p>
+            </div>
           </a>
           <img
             onClick={this.sideNavClick}
@@ -104,9 +112,9 @@ export default class App extends Component {
         </header>
         <Route path="/" component={Home} exact />
         <Route path="/about" component={About} exact />
-        <Route path = "/unique" component = {Unique} exact/>
-        <Route path = "/terms" component = {Terms} exact/>
-        <Route path = "/privacy" component = {Privacy} exact/>
+        <Route path="/unique" component={Unique} exact />
+        <Route path="/terms" component={Terms} exact />
+        <Route path="/privacy" component={Privacy} exact />
       </BrowserRouter>
     );
   }
