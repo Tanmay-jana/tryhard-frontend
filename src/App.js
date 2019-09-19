@@ -11,6 +11,7 @@ import TryHardLogo from "./assets/429e9bf8b8a94aa87be06f9a038c4d1f014a0941.png";
 import sideMenu from "./assets/menu-icon-1@2x.png";
 import discord from "./assets/discord.png";
 import Privacy from "./Component/Privacy/Privacy";
+import SubmitCode from './Component/SubmitCode/SubmitCode'
 
 export default class App extends Component {
   state = {
@@ -115,6 +116,7 @@ export default class App extends Component {
         <Route path="/unique" component={Unique} exact />
         <Route path="/terms" component={Terms} exact />
         <Route path="/privacy" component={Privacy} exact />
+        <Route path = "/submitcode" component = {SubmitCode} exacr/>
       </BrowserRouter>
     );
   }
