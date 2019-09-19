@@ -9,18 +9,18 @@ import arrow from '../../../assets/square-right-03.png';
 export default class Features extends Component {
     render() {
         return (
-            <div className = "features-container">
+            <div  id = "features" className = "features-container">
                 <h1>Built for gamers.</h1>
                 <div className = "image-feature-container">
                     <div className ="feature-block">
                         <img src = {winnerImg} alt = "winner-img"/>
                         <h2>Join Leagues</h2>
-                        <p>Every league has a unique scoring criteria. Join one or multiple leagues.</p>
+                        <p>Every league has a unique scoring criteria. Join any league you want.</p>
                     </div>
                     <div className ="feature-block">
                         <img src = {gameImg} alt = "game-img"/>
                         <h2>Play the Game</h2>
-                        <p>Play your competitive MM or solo ranked matches like you normally would.</p>
+                        <p>Play your competitive or ranked matchmaking like you normally do.</p>
                     </div>
                     <div className ="feature-block">
                         <img src = {analyticsImg} alt = "analystic-img"/>
@@ -33,7 +33,7 @@ export default class Features extends Component {
                         <p>Get rewards immediately after the league ends according to your rank on the leaderboard.</p>
                     </div>
                 </div>
-                <div className = "learn-more">Learn more <img src = {arrow} alt = "arrow"/></div>
+                {/* <div className = "learn-more">Learn more <img src = {arrow} alt = "arrow"/></div> */}
             </div>
         )
     }

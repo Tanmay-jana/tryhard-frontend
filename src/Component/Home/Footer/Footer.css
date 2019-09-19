@@ -34,6 +34,17 @@ footer {
     margin: 0.4rem;
 } 
 
+.footer-links {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.footer-links:hover {
+    color: #2196F3;
+}
+
 @media screen and (max-width: 500px) {
 
     footer {
@@ -48,6 +59,10 @@ footer {
 
     .footer-block {
         margin-bottom: 2rem;
+    }
+
+    .footer-links {
+        padding-bottom: 2rem;
     }
 
 }
