@@ -1,0 +1,40 @@
+.About-container {
+    background-color: #141313;
+    color: #fff;
+    /* padding: 5% 20%; */
+    text-align: center;
+}
+
+.about-header {
+    margin: 0;
+    padding-top: 8rem;
+    padding-bottom: 1rem;
+    text-decoration: underline solid rgb(60, 255, 0);
+    font-family: "openSenBold";
+}
+
+.about-body {
+    padding: 5% 20%;
+    /* height: 70vh; */
+}
+
+.about-body h2 {
+    font-family: "openSenBold";
+}
+
+.about-body p {
+    font-family: "openSenRegular"
+}
+
+@media screen and (max-width: 1024px) {
+    .about-body {
+        padding: 5% 20%;
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .about-body {
+        height: auto;
+    }
+}

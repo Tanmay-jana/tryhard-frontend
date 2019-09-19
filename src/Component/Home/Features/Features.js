@@ -4,7 +4,7 @@ import winnerImg from '../../../assets/winner.png';
 import gameImg from '../../../assets/Group7.png';
 import euroImg from '../../../assets/round-euro.png';
 import analyticsImg from '../../../assets/analytics.png';
-import arrow from '../../../assets/square-right-03.png';
+// import arrow from '../../../assets/square-right-03.png';
 
 export default class Features extends Component {
     render() {

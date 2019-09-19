@@ -5,7 +5,7 @@ footer {
     font-size: 0.8rem;
     display: flex;
     justify-content: space-between;
-    padding: 2rem 4rem;
+    padding: 1rem 4rem;
     border-top: 0.5px solid gray;
     align-items: center;
 }
@@ -17,7 +17,7 @@ footer {
 }
 
 .footer-logo-container img{
-    width: 6rem;
+    width: 4rem;
 }
 
 .footer-block {

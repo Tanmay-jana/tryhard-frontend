@@ -32,13 +32,13 @@ export default class Footer extends Component {
                     <p>Instagram</p>
                     <p>Discord</p>
                 </div> */}
-                <Link className = "footer-links">About</Link>
-                <a className = "footer-links">What makes us unique</a>
-                <a className = "footer-links" href = "https://docs.google.com/document/d/1mFBpCOFY-Z3VgVSgEHUdLDYrvzdlklt8s4rZcuYDdLA/edit" target = "_blank">Terms & Conditions</a>
-                <a className = "footer-links" href = "https://docs.google.com/document/d/1q_fPlXDNApzaSjpjTOAAn2gq2oS3CFk3_KdXLJBjOMM/edit?usp=sharing" target = "_blank">Privacy Policy</a>
-                <a href = "https://www.facebook.com/tryhardggesport/" target = "_blank"><i class="footer-links fa fa-facebook"></i></a>
-                <a href = "https://twitter.com/tryhardggesport" target = "_blank"><i class="footer-links fa fa-twitter"></i></a>
-                <a href = "https://www.instagram.com/tryhardgg_esports/" target = "_blank"><i class="footer-links fa fa-instagram"></i></a>
+                <Link to = "/about" className = "footer-links">About</Link>
+                <Link to = "/unique" className = "footer-links">What makes us unique</Link>
+                <Link className = "footer-links" to = "/terms">Terms & Conditions</Link>
+                <Link className = "footer-links" to = "/privacy">Privacy Policy</Link>
+                <a href = "https://www.facebook.com/tryhardggesport/" target = "_blank"><i className="footer-links fa fa-facebook"></i></a>
+                <a href = "https://twitter.com/tryhardggesport" target = "_blank"><i className="footer-links fa fa-twitter"></i></a>
+                <a href = "https://www.instagram.com/tryhardgg_esports/" target = "_blank"><i className="footer-links fa fa-instagram"></i></a>
             </footer>
         )
     }

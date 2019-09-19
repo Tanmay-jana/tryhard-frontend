@@ -1,0 +1,39 @@
+.unique-container {
+    background-color: #141313;
+    color: #fff;
+    text-align: center;
+    padding-top: 7rem;
+}
+
+.unique-header {
+    margin: 0;
+    padding: 15px;
+    text-decoration: underline solid rgb(60, 255, 0);
+    font-family: "openSenBold";
+}
+
+.unique-container-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* height: 70vh; */
+}
+
+.unique-body {
+    padding: 5% 20%;
+    font-size: 1.4rem;
+    font-family: "openSenRegular";
+}
+
+@media screen and (max-width: 1024px) {
+    .unique-container-body {
+        height: 90vh;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .unique-container-body {
+        height: auto;
+    }
+}

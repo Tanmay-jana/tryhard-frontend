@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './Games.css'
-import CsGo from '../../../assets/7abc1e1e0d869743ef14e6fbf70672d80bf06621.png';
+import CsGo from '../../../assets/csgo.jpg';
 import Dota2 from '../../../assets/cb904b27a725d7840b9e2880d93d5e42fb57e8e6.png';
 
 export default class Games extends Component {
