@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import "./App.css";
-import { BrowserRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 import Home from "./Component/Home/Home";
 import About from "./Component/About/About";
 import Unique from "./Component/Unique/Unique";
@@ -57,7 +57,6 @@ export default class App extends Component {
           className={this.state.sideNav ? "sidenav" : "invisible"}
         >
           <a
-            // href="javascript:void(0)"
             className="closebtn"
             onClick={this.close}
           >
@@ -100,7 +99,7 @@ export default class App extends Component {
             <a className="nav-option" href="/#features">
               Features
             </a>
-            <a href = "/submitcode" className="nav-option">Submit Match share code</a>
+            <Link to = "/submitcode" className="nav-option">Submit Match share code</Link>
             <a className="discord-block">
               {/* <p className="nav-option">Join us on</p>{" "} */}
               <img className="discord-logo" src={discord} alt="discord" />

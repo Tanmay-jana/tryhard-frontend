@@ -66,6 +66,10 @@
         border: none;
         outline: none;
     }
+
+    .code-body {
+        padding: 10% 10% 5% 10%;
+    }
 }
 
 @media screen and (max-width: 500px) {

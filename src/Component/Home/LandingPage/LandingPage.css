@@ -267,7 +267,7 @@
     padding-top: 60px;
 }
 
-.invisible a,
+
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -275,6 +275,11 @@
     color: #818181;
     display: block;
     transition: 0.3s;
+    animation: transitionIn 2.5s;
+}
+
+.invisible a {
+    display: none
 }
 
 .sidenav a:hover {
@@ -286,7 +291,7 @@
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+    font-size: 5rem;
     margin-left: 50px;
 }
 
@@ -383,7 +388,7 @@
         display: flex;
         align-items: center;
         width: 90%;
-    } 
+    }
 
     .tryhard-logo {
         width: 3rem;
@@ -416,5 +421,26 @@
         font-size: 1rem;
         margin: 0;
         margin-bottom: 5rem;
+    }
+
+    .invisible .closebtn,
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 3rem;
+        margin-left: 50px;
+    }
+}
+
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
     }
 }
