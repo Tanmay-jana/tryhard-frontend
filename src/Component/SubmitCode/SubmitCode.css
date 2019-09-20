@@ -56,3 +56,25 @@
 .qr-visible > * {
     display: flex;
 }
+
+@media screen and (max-width: 1024px) {
+    .email-field {
+        width: 70%;
+        font-size: 1rem;
+        padding: 0.5rem 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .email-field {
+        width: 100%;
+        font-size: 1rem;
+        padding: 0.5rem 0.3rem;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+    }
+}

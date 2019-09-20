@@ -16,3 +16,9 @@
 .privacy-body {
     padding: 3% 19%;
 }
+
+@media screen and (max-width: 1024px) {
+    .privacy-body {
+        padding: 3% 10%;
+    }
+}

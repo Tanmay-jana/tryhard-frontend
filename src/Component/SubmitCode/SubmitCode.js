@@ -8,8 +8,29 @@ import Footer from "../Home/Footer/Footer";
 export default class SubmitCode extends Component {
   state = {
     link: "",
-    qrvisible: false
+    qrvisible: false,
+    width : 0,
+    height: 0
   };
+
+  constructor(props) {
+    super(props);
+    this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
+  }
+
+  componentDidMount() {
+    this.updateWindowDimensions();
+    window.addEventListener('resize', this.updateWindowDimensions);
+  }
+  
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.updateWindowDimensions);
+  }
+
+  updateWindowDimensions() {
+    this.setState({ width: window.innerWidth, height: window.innerHeight });
+  }
+
   generateQrCode = e => {
     this.setState({ qrvisible: false });
     e.preventDefault();
@@ -26,6 +47,7 @@ export default class SubmitCode extends Component {
     }
   };
   render() {
+      console.log(this.state.width)
     return (
       <div className="code-container">
         <div className="code-body">
@@ -52,14 +74,13 @@ export default class SubmitCode extends Component {
               value="GENERATE QR CODE"
               name="subscribe"
               id="subscribe"
-              onclick="generateBarCode();"
               className="button btn btn-vanido"
             />
           </form>
           <div className={this.state.qrvisible ? "qr-visible" : "qr-invisible"}>
             <QRCode
               value={this.state.link}
-              size = {300}
+              size = {this.state.width >= 700? 300:200}
               level = "Q"
               renderAs = "svg"
             />

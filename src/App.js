@@ -66,7 +66,7 @@ export default class App extends Component {
           <a onClick={this.close} href="/#features">
             Features
           </a>
-          <a onClick={this.close} href="#">
+          <a onClick={this.close} href="/submitcode">
             Submit Match share code
           </a>
           <a onClick={this.close} className="discord-block">
@@ -100,7 +100,7 @@ export default class App extends Component {
             <a className="nav-option" href="/#features">
               Features
             </a>
-            <p className="nav-option">Submit Match share code</p>
+            <a href = "/submitcode" className="nav-option">Submit Match share code</a>
             <a className="discord-block">
               {/* <p className="nav-option">Join us on</p>{" "} */}
               <img className="discord-logo" src={discord} alt="discord" />

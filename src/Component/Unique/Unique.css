@@ -28,7 +28,10 @@
 
 @media screen and (max-width: 1024px) {
     .unique-container-body {
-        height: 90vh;
+        height: 80vh;
+    }
+    .unique-body {
+        padding: 5% 10%;
     }
 }
 
