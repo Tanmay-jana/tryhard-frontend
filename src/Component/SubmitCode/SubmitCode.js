@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import QRCode from "qrcode-react";
+import QRCode from "qrcode.react";
 import "./SubmitCode.css";
 import Footer from "../Home/Footer/Footer";
 
@@ -80,15 +80,31 @@ export default class SubmitCode extends Component {
           </form>
           <div className={this.state.qrvisible ? "qr-visible" : "qr-invisible"}>
             <QRCode
+              id="123456"
               value={this.state.link}
               size = {this.state.width >= 700? 300:200}
-              level = "Q"
-              renderAs = "svg"
+              level = "H"
+              // renderAs = "svg"
+              includeMargin={true}
             />
+            <a onClick={downloadQR}> Download QR </a>
           </div>
         </div>
         <Footer />
       </div>
     );
   }
+}
+
+const downloadQR = () => {
+  const canvas = document.getElementById("123456");
+  const pngUrl = canvas
+    .toDataURL("image/png")
+    .replace("image/png", "image/octet-stream");
+  let downloadLink = document.createElement("a");
+  downloadLink.href = pngUrl;
+  downloadLink.download = "123456.png";
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
 }

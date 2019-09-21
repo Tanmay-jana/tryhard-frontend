@@ -47,10 +47,20 @@
 
 .qr-visible {
     display: flex;
+    flex-direction: column;
+    color: blue;
     align-items: center;
     justify-content: space-around;
     padding: 10%;
     background: #fff;
+}
+
+.qr-visible a {
+    cursor: pointer;
+}
+
+.qr-visible a:hover {
+    text-decoration: underline;
 }
 
 .qr-visible > * {
