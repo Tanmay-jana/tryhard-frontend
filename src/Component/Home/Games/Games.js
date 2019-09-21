@@ -9,7 +9,7 @@ export default class Games extends Component {
             <div className = "games-container">
                 <div className = "games-text-container">
                     <h1>Your favorite games.</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua\</p>
+                    {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua\</p> */}
                 </div>
                 <div className = "image-game-container">
                     <img src = {CsGo} alt = "cs-go"/>
