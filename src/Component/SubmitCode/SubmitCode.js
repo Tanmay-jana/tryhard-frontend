@@ -19,6 +19,7 @@ export default class SubmitCode extends Component {
   }
 
   componentDidMount() {
+    window.scrollTo(0,0);
     this.updateWindowDimensions();
     window.addEventListener('resize', this.updateWindowDimensions);
   }
@@ -38,10 +39,10 @@ export default class SubmitCode extends Component {
     var re = /steam:\/\/rungame\/730\/[0-9]{17}\/\+csgo_download_match%20CSGO(-[A-Za-z0-9]{5}){5}/;
     // console.log(re.test(e.target.SHARECODE.value));
     if (re.test(e.target.SHARECODE.value)) {
-      console.log("Yes");
+      // console.log("Yes");
       this.setState({ link: e.target.SHARECODE.value, qrvisible: true });
     } else {
-      console.log("No");
+      // console.log("No");
       alert("Invalid input. Please check the match share code.")
       this.setState({ link: "", qrvisible: false });
     }

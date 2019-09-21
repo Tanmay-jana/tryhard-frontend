@@ -3,6 +3,9 @@ import "./Unique.css";
 import Footer from "../Home/Footer/Footer";
 
 export default class Unique extends Component {
+  componentDidMount = () => {
+    window.scrollTo(0,0);
+  }
   render() {
     return (
       <div className="unique-container">
