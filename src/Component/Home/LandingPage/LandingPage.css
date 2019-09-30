@@ -102,6 +102,7 @@
     outline: none;
     font-family: 'openSenBold';
     font-size: 100%;
+    margin-bottom: 5rem;
 }
 
 .portal-button::before {
@@ -151,7 +152,7 @@
     justify-content: space-between;
     background-color: rgba(0, 0, 0, 0.3);
     width: 95%;
-    transition: 0.5s
+    transition: 0.5s;
 }
 
 .solid-header {
@@ -163,6 +164,7 @@
     width: 95%;
     transition: 0.5s;
     box-shadow: 0px 0px 15px 2px #222;
+    z-index: 1
 }
 
 .tryhard-logo {
@@ -357,10 +359,6 @@
         transition: 0.2s;
         /* margin-bottom: 4rem; */
     }
-
-    /* .portal-button {
-        display: none;
-    } */
 
 }
 

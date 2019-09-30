@@ -59,7 +59,7 @@ export default class LandingPage extends Component {
             Tryhard brings to you a unique platform where you get rewarded for
             your performance in the game’s own competitive matchmaking
           </h3>
-          <a
+          <a  className = "google-play-links"
             target="_blank"
             href={
               sessionStorage.getItem("countryName") === "India"
