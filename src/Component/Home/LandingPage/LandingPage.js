@@ -12,7 +12,7 @@ import backgroundImg from "../../../assets/d5eaa24d8b1f0c1dc4b07f989c491a87fb92e
 
 export default class LandingPage extends Component {
   state = {
-    stateName: "",
+    countryName: "",
     ipAddress: ""
   };
 
@@ -34,7 +34,8 @@ export default class LandingPage extends Component {
       iplocation(`${res}`)
     .then((res) => {
       // console.log(res.country)
-      this.setState({stateName: res.country})
+      this.setState({countryName: res.country})
+      sessionStorage.setItem("countryName", res.country)
     })
     .catch(err => {
       console.log(err);
@@ -61,17 +62,17 @@ export default class LandingPage extends Component {
           <a
             target="_blank"
             href={
-              this.state.stateName === "India"
+              sessionStorage.getItem("countryName") === "India"
                 ? "https://www.youtube.com"
                 : "https://google.com"
             }
           >
             <img
-              className="google-play-logo"
+              className={sessionStorage.getItem("countryName") !== "India"? "google-play-logo": "invisible"}
               src={GooglePlayLogo}
               alt="Google_play_logo"
             />
-            {/* <button className = "portal-button">GO TO OUT PORTAL</button> */}
+            <button className = {sessionStorage.getItem("countryName") === "India"? "portal-button": "invisible-button"}>Download for Android</button>
           </a>
         </div>
       </div>

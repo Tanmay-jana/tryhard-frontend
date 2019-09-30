@@ -45,6 +45,12 @@ footer {
     color: #2196F3;
 }
 
+.social-icons-holder {
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
 @media screen and (max-width: 500px) {
 
     footer {
@@ -65,4 +71,9 @@ footer {
         padding-bottom: 2rem;
     }
 
+    .social-icons-holder {
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+    }
 }

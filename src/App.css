@@ -2,6 +2,10 @@ html {
   font-family: 'openSenRegular'
 }
 
+.button {
+  outline: none;
+}
+
 .App {
   background: #2d2d2d;
 }

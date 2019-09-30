@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-script-url */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
@@ -68,7 +69,10 @@ export default class App extends Component {
           <Link onClick={this.close} to="/submitcode">
             Submit Match share code
           </Link>
-          <a onClick={this.close} className="discord-block">
+          <a onClick={this.close} href = "steam://friends/add/76561198981932631" target = "_blank">
+          Add us on Steam
+          </a>
+          <a onClick={this.close} className="discord-block" href = "https://discordapp.com/invite/cTH9SMt" target = "_blank">
             {/* <p className="nav-option">Join us on</p>{" "} */}
             <img className="discord-logo" src={discord} alt="discord" />
           </a>
@@ -100,7 +104,8 @@ export default class App extends Component {
               Features
             </a>
             <Link to = "/submitcode" className="nav-option">Submit Match share code</Link>
-            <a className="discord-block">
+            <a className="nav-option" href = "steam://friends/add/76561198981932631" target = "_blank">Add us on Steam</a>
+            <a className="discord-block" href = "https://discordapp.com/invite/cTH9SMt" target = "_blank">
               {/* <p className="nav-option">Join us on</p>{" "} */}
               <img className="discord-logo" src={discord} alt="discord" />
             </a>

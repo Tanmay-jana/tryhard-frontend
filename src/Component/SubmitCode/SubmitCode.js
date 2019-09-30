@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from "react";
 import QRCode from "qrcode.react";
 import "./SubmitCode.css";
@@ -87,7 +88,7 @@ export default class SubmitCode extends Component {
               // renderAs = "svg"
               includeMargin={true}
             />
-            <a onClick={downloadQR}> Download QR </a>
+            <a href = "#" onClick={downloadQR}> Download QR </a>
           </div>
         </div>
         <Footer />

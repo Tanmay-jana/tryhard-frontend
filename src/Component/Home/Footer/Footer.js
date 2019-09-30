@@ -36,9 +36,11 @@ export default class Footer extends Component {
                 <Link to = "/unique" className = "footer-links">What makes us unique</Link>
                 <Link className = "footer-links" to = "/terms">Terms & Conditions</Link>
                 <Link className = "footer-links" to = "/privacy">Privacy Policy</Link>
+                <div className = "social-icons-holder">
                 <a href = "https://www.facebook.com/tryhardggesport/" target = "_blank"><i className="footer-links fa fa-facebook"></i></a>
                 <a href = "https://twitter.com/tryhardggesport" target = "_blank"><i className="footer-links fa fa-twitter"></i></a>
                 <a href = "https://www.instagram.com/tryhardgg_esports/" target = "_blank"><i className="footer-links fa fa-instagram"></i></a>
+                </div>
             </footer>
         )
     }
