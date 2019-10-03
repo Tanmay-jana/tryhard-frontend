@@ -40,7 +40,7 @@
     font-family: "openSenRegular";
 }
 
-.download-button-container button {
+.download-button-container a {
     background: #2196F3;
     font-family: 'openSenBold';
     border-radius: 20px;
@@ -48,7 +48,13 @@
     border: none;
     height: 2rem;
     width: 7rem;
-    transition: 0.2s
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .download-button-container button:hover {
