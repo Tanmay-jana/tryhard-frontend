@@ -5,6 +5,7 @@ import gameImg from '../../../assets/Group7.png';
 import euroImg from '../../../assets/round-euro.png';
 import analyticsImg from '../../../assets/analytics.png';
 // import arrow from '../../../assets/square-right-03.png';
+import rupeeImg from '../../../assets/round-rupee.png'
 
 export default class Features extends Component {
     render() {
@@ -28,7 +29,7 @@ export default class Features extends Component {
                         <p>No need to form a team - get scored basis your own performance independent of the end result</p>
                     </div>
                     <div className ="feature-block">
-                        <img src = {euroImg} alt = "eurro-img"/>
+                        <img src = {sessionStorage.getItem('countryName')==="India"? rupeeImg : euroImg} alt = "eurro-img"/>
                         <h2>Earn Cash Reward</h2>
                         <p>Get rewards immediately after the league ends according to your rank on the leaderboard.</p>
                     </div>
