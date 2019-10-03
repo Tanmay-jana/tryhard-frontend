@@ -54,7 +54,7 @@ export default class LandingPage extends Component {
         <img className="background-img" src={backgroundImg} alt="background" />
 
         <div className="landing-body">
-          <h1>Tired of playing well and still losing?</h1>
+          <h1>Play DotA 2 or CSGO and win cash, even if you lose</h1>
           <h3>
             Tryhard brings to you a unique platform where you get rewarded for
             your performance in the game’s own competitive matchmaking
